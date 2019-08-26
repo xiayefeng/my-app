@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import NameForm from './form/NameForm'
-import './App.css';
+import './App.scss';
 
 function App() {
   /* return (

@@ -1,16 +1,20 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import Page from '../components/page'
+import Toggle from '../components/Toggle'
 
 function Index() {
   return <h2>Home</h2>;
 }
 
 function About() {
-  return <h2>About</h2>;
+  return (
+    <h2>About</h2>
+  );
 }
 
 function Users() {
-  return <h2>Users</h2>;
+  return <Page />;
 }
 class NameForm extends React.Component {
   constructor(props) {
@@ -25,7 +29,7 @@ class NameForm extends React.Component {
   }
 
   handleSubmit(e) {
-    alert('提交的名字:' + this.state.value)
+    console.log('提交的名字:' + this.state.value)
     e.preventDefault()
   }
 
@@ -57,6 +61,7 @@ class NameForm extends React.Component {
           </label>
           <input type="submit" value="提交" />
         </form>
+        <Toggle />
         </div>
         
       </Router>
