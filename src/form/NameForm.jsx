@@ -2,6 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import Page from '../components/page'
 import Toggle from '../components/Toggle'
+import List from '../components/List'
 
 function Index() {
   return <h2>Home</h2>;
@@ -62,6 +63,7 @@ class NameForm extends React.Component {
           <input type="submit" value="提交" />
         </form>
         <Toggle />
+        <List numbers={[1, 2, 3, 4, 5]} />
         </div>
         
       </Router>
