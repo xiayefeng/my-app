@@ -8,7 +8,6 @@ class Toggle extends React.Component{
   }
 
   handleClick(e){
-    console.log(e)
     this.setState(state => ({
       isToggleOn: !state.isToggleOn
     }))
