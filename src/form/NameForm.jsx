@@ -31,8 +31,9 @@ class NameForm extends React.Component {
   }
 
   handleSubmit(e) {
-    console.log('提交的名字:' + this.state.value)
     e.preventDefault()
+    console.log('提交的名字:' + this.state.value)
+    
   }
 
   render() {
