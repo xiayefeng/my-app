@@ -16,12 +16,15 @@ function Toolbar(props) {
 function Page(props){
   return (
   <div>
+    {props.children}
   </div>)
 }
 
 function Section(props) {
   return (
-    <div></div>
+    <div>
+      {props.children}
+    </div>
   )
 }
 

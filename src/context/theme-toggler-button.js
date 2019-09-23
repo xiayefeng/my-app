@@ -8,7 +8,7 @@ function ThemeTogglerButton() {
       {({theme, toggleTheme}) => (
         <button
           onClick={toggleTheme}
-          style={{backgroundColor: theme.background}}>
+          style={{backgroundColor: theme.background, color: theme.foreground}}>
 
           Toggle Theme
         </button>
